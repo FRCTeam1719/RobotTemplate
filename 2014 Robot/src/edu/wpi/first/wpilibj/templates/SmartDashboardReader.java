@@ -15,7 +15,6 @@ import edu.wpi.first.wpilibj.templates.testmode.TestMode;
  *
  * @author aaroneline
  */
-//TODO Clean
 public class SmartDashboardReader implements IStep {
 
     //Sendable choosers
@@ -32,7 +31,7 @@ public class SmartDashboardReader implements IStep {
 
     public void step() {
         //Sendable choosers
-        Controller.setDriveMode(getSelectedFromChooser(driveMode));
+        
         TestMode.setTestNumber(getSelectedFromChooser(testMode));
         LogLevelCheck.setUserLogLevel(getSelectedFromChooser(logLevel));
         //NewServo.setServoValue(SmartDashboard.getNumber("servoValue"));
@@ -42,7 +41,7 @@ public class SmartDashboardReader implements IStep {
 
         startSendableChoosers();
         startVaribles();
-        Devices.setSelectedRobot(getSelectedFromChooser(robot));
+        
 
     }
 
@@ -56,24 +55,6 @@ public class SmartDashboardReader implements IStep {
     private void startSendableChoosers() {
 
         //Put sendable choosers here
-        //Tank or arcade drive modes
-        driveMode = new SendableChooser();
-        driveMode.addDefault("Arcade Mode", Integer.valueOf(1));
-        driveMode.addObject("Tank Mode", Integer.valueOf(2));
-        SmartDashboard.putData("Drive Mode Options", driveMode);
-
-        //Manual or Automatic transmision
-        autoTransmision = new SendableChooser();
-        autoTransmision.addDefault("Automatic transmition", Integer.valueOf(1));
-        autoTransmision.addObject("Manual transmition", Integer.valueOf(2));
-        SmartDashboard.putData("Transmition options", autoTransmision);
-
-        //Robot port chooser
-        robot = new SendableChooser();
-        robot.addDefault("compotition robot 1", Integer.valueOf(1));
-        robot.addObject("test robot 1", Integer.valueOf(2));
-        robot.addObject("test robot 2", Integer.valueOf(3));
-        SmartDashboard.putData("robot", robot);
 
         //Log Level
         logLevel = new SendableChooser();
@@ -93,13 +74,9 @@ public class SmartDashboardReader implements IStep {
 
     private void startVaribles() {
         //Put smartdashboard varibles here
-        //Weather or not to switch to the LiveWindow networktable during test mode
-        SmartDashboard.putBoolean("shouldLiveWindow", RobotTemplate.shouldLiveWindow);
-
-        SmartDashboard.putNumber("P", 0);
-        SmartDashboard.putNumber("I", 0);
-        SmartDashboard.putNumber("D", 0);
-        SmartDashboard.putNumber("TargetSpeed", 0);
+        
+        //Whether or not to switch to the LiveWindow networktable during test mode
+        SmartDashboard.putBoolean("shouldLiveWindow", RobotTemplate.shouldLiveWindow); 
     }
 
     static public void putBoolean(String name, boolean value, boolean networktable) {
