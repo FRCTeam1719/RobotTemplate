@@ -29,7 +29,7 @@ public class RobotTemplate extends IterativeRobot {
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
      */
-    //TODO clean up, move portions into their own class
+    //TODO Clean up everything
     
     
     Devices devices = new Devices();

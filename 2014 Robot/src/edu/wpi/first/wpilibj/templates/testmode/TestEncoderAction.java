@@ -1,12 +1,12 @@
 package edu.wpi.first.wpilibj.templates.testmode;
 
-import edu.wpi.first.wpilibj.templates.NewEncoder;
+import edu.wpi.first.wpilibj.templates.EncoderDevice;
 import edu.wpi.first.wpilibj.templates.autonomous.Action;
 import edu.wpi.first.wpilibj.templates.Constants;
 
 public class TestEncoderAction extends Action {
 
-    NewEncoder encoder;
+    EncoderDevice encoder;
     double reference;
     int mode;
     String msg;
@@ -19,7 +19,7 @@ public class TestEncoderAction extends Action {
      * @param msg Message for the accumulator
      * @param acc TestResults accumulator
      */
-    public TestEncoderAction(NewEncoder encoder, double reference, int mode, String msg, TestResults acc) {
+    public TestEncoderAction(EncoderDevice encoder, double reference, int mode, String msg, TestResults acc) {
         this.encoder=encoder;
         this.reference=reference;
         this.mode=mode;

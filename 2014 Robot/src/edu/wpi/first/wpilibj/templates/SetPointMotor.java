@@ -33,7 +33,6 @@ public class SetPointMotor implements IStep {
     public void step() {
         if(!enabled){
             victor.set(IDLE_SPEED);
-            System.out.println("!enabled return println");
             return;
         }
         if (potentiometer.get() < point && isGoingBack) {
@@ -46,7 +45,6 @@ public class SetPointMotor implements IStep {
         } else {
             isAtPoint = true;
             victor.set(0);
-            System.out.println("Else print");
         }
     }
 

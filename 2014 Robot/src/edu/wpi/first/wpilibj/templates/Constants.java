@@ -10,6 +10,7 @@ package edu.wpi.first.wpilibj.templates;
  *
  * @author brandon
  */
+//TODO: What is this class for?
 public class Constants {
     
     //Comparison Enum

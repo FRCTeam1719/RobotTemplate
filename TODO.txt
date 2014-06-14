@@ -1,6 +1,9 @@
-Test autonomous
-Check Intake system
+TODO:
 
-Test vision in different environments
-    Validate in different lighting conditions
-Drive straight in autonomous
+Controllers:
+	Port controller.java to GenericController system
+Find purpose of Constants.java
+
+Clean:
+	RoboTemplate.java
+	SmartDashboardReader.java

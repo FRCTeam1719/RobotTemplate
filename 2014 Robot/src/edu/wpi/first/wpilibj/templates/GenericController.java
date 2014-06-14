@@ -44,19 +44,19 @@ public class GenericController implements IStep{
        
         
     }
-    public void noTriggerPressed(){}
-    public void leftBumperPressed(){/*don't put anything in here*/}
-    public void rightBumperPressed(){/*don't put anything in here*/}
-    public void aPressed(){/*don't put anything in here*/}
-    public void bPressed(){/*don't put anything in here*/}
-    public void xPressed(){/*don't put anything in here*/}
-    public void yPressed(){/*don't put anything in here*/}
-    public void triggerPressed(){/*don't put anything in here*/}
-    public void leftTriggerPressed(){/*don't put anything in here*/}
-    public void rightTriggerPressed(){/*don't put anything in here*/}
-    public void leftJoystickX(double value){}
-    public void leftJoysticky(double value){/*don't put anything in here*/}
-    public void rightJoystickX(double value){/*don't put anything in here*/}
-    public void rightJoystickY(double value){/*don't put anything in here*/}
+    public void noTriggerPressed(){/*please don't put anything in here*/}
+    public void leftBumperPressed(){/*please don't put anything in here*/}
+    public void rightBumperPressed(){/*please don't put anything in here*/}
+    public void aPressed(){/*please don't put anything in here*/}
+    public void bPressed(){/*please don't put anything in here*/}
+    public void xPressed(){/*please don't put anything in here*/}
+    public void yPressed(){/*please don't put anything in here*/}
+    public void triggerPressed(){/*please don't put anything in here*/}
+    public void leftTriggerPressed(){/*please don't put anything in here*/}
+    public void rightTriggerPressed(){/*please don't put anything in here*/}
+    public void leftJoystickX(double value){/*please don't put anything in here*/}
+    public void leftJoysticky(double value){/*please don't put anything in here*/}
+    public void rightJoystickX(double value){/*please don't put anything in here*/}
+    public void rightJoystickY(double value){/*please don't put anything in here*/}
 }
 

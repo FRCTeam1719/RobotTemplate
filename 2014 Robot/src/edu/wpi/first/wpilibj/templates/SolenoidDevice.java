@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.Solenoid;
  *
  * @author Chance
  */
-public class NewSolenoid implements IStep{
+public class SolenoidDevice implements IStep{
    Solenoid solenoid,secondarySolenoid;
    private boolean isOn = true;
     public void step(){
@@ -19,16 +19,16 @@ public class NewSolenoid implements IStep{
            secondarySolenoid.set(!isOn);
        }
    }
-    public NewSolenoid init(){
+    public SolenoidDevice init(){
         return this;
         
     }
     
-    public NewSolenoid setPort(int a){
+    public SolenoidDevice setPort(int a){
         solenoid = new Solenoid(a);
         return this;
     }
-    public NewSolenoid setSecondaryPort(int a){
+    public SolenoidDevice setSecondaryPort(int a){
         secondarySolenoid = new Solenoid(a);
         return this;
     }

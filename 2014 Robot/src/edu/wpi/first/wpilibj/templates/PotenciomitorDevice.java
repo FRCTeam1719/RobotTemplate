@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.AnalogPotentiometer;
  *
  * @author Chance
  */
-public class NewPotenciomitor implements IStep {
+public class PotenciomitorDevice implements IStep {
 
     int port;
     AnalogPotentiometer pontentiometer;
@@ -18,12 +18,12 @@ public class NewPotenciomitor implements IStep {
         
     }
 
-    public NewPotenciomitor init() {
+    public PotenciomitorDevice init() {
         pontentiometer = new AnalogPotentiometer(port);
         return this;
     }
 
-    public NewPotenciomitor setPort(int port) {
+    public PotenciomitorDevice setPort(int port) {
         this.port = port;
         return this;
     }

@@ -12,10 +12,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  *
  * @author Chance
  */
-public class NewEncoder implements IStep {
+public class EncoderDevice implements IStep {
     //TODO rename class
 
-    NewEncoder() {
+    EncoderDevice() {
     }
     Encoder encoder;
     DigitalInput di1;
@@ -30,7 +30,7 @@ public class NewEncoder implements IStep {
     public void step() {
     }
 
-    public NewEncoder init() {
+    public EncoderDevice init() {
 
         di1 = new DigitalInput(encoderAChannelSlot, encoderAChannelPort);
         di2 = new DigitalInput(encoderBChannelSlot, encoderBChannelPort);
@@ -63,13 +63,13 @@ public class NewEncoder implements IStep {
     }
     //sets the port for the first encoder
 
-    public NewEncoder setEncoderAChannelPort(int portNumber) {
+    public EncoderDevice setEncoderAChannelPort(int portNumber) {
         encoderAChannelPort = portNumber;
         return this;
     }
     //sets the port for the second encoder
 
-    public NewEncoder setEncoderBChannelPort(int portNumber) {
+    public EncoderDevice setEncoderBChannelPort(int portNumber) {
         encoderBChannelPort = portNumber;
         return this;
     }

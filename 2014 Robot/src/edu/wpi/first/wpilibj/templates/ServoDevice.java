@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  *
  * @author Thomas
  */
-public class NewServo implements IStep{
+public class ServoDevice implements IStep{
     Servo servo;
     int port;
     private static double servoValue;
@@ -22,7 +22,7 @@ public class NewServo implements IStep{
     public void step() {
         servo.set(servoValue);
     }
-    public NewServo setPort(int slot){
+    public ServoDevice setPort(int slot){
         port = slot;
         return this;
     }
