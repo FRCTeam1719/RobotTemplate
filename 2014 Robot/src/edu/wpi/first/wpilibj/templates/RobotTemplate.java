@@ -29,79 +29,52 @@ public class RobotTemplate extends IterativeRobot {
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
      */
-    //TODO Clean up everything
     
     
     Devices devices = new Devices();
-    static Controller controller = new Controller();;
+    AutonDevices autonDevices = new AutonDevices();
+    TestDevices testDevices = new TestDevices();
+    //Dont Touch this, it keeps the demons away: shouldlivewindow.txt
     public static boolean shouldLiveWindow = false;
     public void robotInit() {
-       SmartDashboard.putNumber("gyro", 0);
-        SmartDashboard.putBoolean("KickerTestMode", false);
-        SmartDashboard.putBoolean("resetGyro",false);
-        SmartDashboard.putNumber("rotationlessen", 180);
-        //Create new SendableChooser, with two options.
-        
-        
-        
-        //Test Mode boolean
-        
-        
-        
-        
-        //TODO magic numbers
-        controller.set(1).init();
         devices.init();
     }
     
     
+    
     public void autonomousInit(){      
-       SmartDashboard.putBoolean("isAtonomus", true);
-       Devices.autonomous.init();
+       SmartDashboard.putString("Mode", "auton");
+       autonDevices.init();
     }
     /**
      * This function is called periodically during autonomous
      */
     public void autonomousPeriodic() {
-        Devices.autonomous.step();
-        devices.step();
-        
-//        double speed=SmartDashboard.getNumber("TargetSpeed");
-//        devices.drive.DriveStraight(speed);
+        autonDevices.step();
     }
+    
     public void teleopInit(){
-        SmartDashboard.putBoolean("isAtonomus", false);
-         
-       
+        SmartDashboard.putString("Mode", "teleop");
     }
     /**
      * This function is called periodically during operator control
      */
     public void teleopPeriodic() {
-        controller.step();
-        Devices.operatorController.step();
         devices.step();
-        //TODO: magic numbers
-//        devices.drive.DriveStraight(400);
     }
-    
-    /**
-     * This function is called periodically during test mode
-     */
     
     public void testInit() {
-        Devices.testMode.init();
+        testDevices.init();
+        SmartDashboard.putString("Mode", "test");
     }
+    /**
+     * This Function is called periodically during Test Mode
+     */
     public void testPeriodic() {
-        Devices.testMode.step();
-        devices.step();
+        testDevices.step();
+        //Don't touch this, it keeps the demons away: shouldlivewindow.txt
         if(!SmartDashboardReader.getBoolean("shouldLiveWindow", false)){
         SmartDashboardReader.putBoolean("~STATUS~/LW Enabled", false, false);
         }
-        
-        
-        
     }
-    
-    
 }

@@ -5,5 +5,4 @@ Controllers:
 Find purpose of Constants.java
 
 Clean:
-	RoboTemplate.java
 	SmartDashboardReader.java
