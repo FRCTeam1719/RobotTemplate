@@ -13,7 +13,6 @@ import edu.wpi.first.wpilibj.networktables.NetworkTable;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.tables.ITable;
-import edu.wpi.first.wpilibj.templates.testmode.TestMode;
 
 //TODO: what is the thingy printline
 //HI CHANCE 

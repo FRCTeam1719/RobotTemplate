@@ -6,9 +6,6 @@ package edu.wpi.first.wpilibj.templates;
 
 import edu.wpi.first.wpilibj.templates.autonomous.Action;
 import edu.wpi.first.wpilibj.templates.autonomous.Chain;
-import edu.wpi.first.wpilibj.templates.autonomous.autoactions.ArcadeDriveAction;
-import edu.wpi.first.wpilibj.templates.autonomous.autoactions.IntakeArmAction;
-import edu.wpi.first.wpilibj.templates.autonomous.autoactions.ShooterAction;
 import edu.wpi.first.wpilibj.templates.autonomous.autoactions.TimerWaitAction;
 
 /**

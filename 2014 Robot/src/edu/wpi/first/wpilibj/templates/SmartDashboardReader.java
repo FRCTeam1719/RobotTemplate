@@ -9,7 +9,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.tables.ITable;
 import edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
-import edu.wpi.first.wpilibj.templates.testmode.TestMode;
 
 /**
  *
@@ -32,7 +31,6 @@ public class SmartDashboardReader implements IStep {
     public void step() {
         //Sendable choosers
         
-        TestMode.setTestNumber(getSelectedFromChooser(testMode));
         LogLevelCheck.setUserLogLevel(getSelectedFromChooser(logLevel));
         //NewServo.setServoValue(SmartDashboard.getNumber("servoValue"));
     }
