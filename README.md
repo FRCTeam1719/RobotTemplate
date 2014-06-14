@@ -1,4 +1,2 @@
-RobotTemplate
-=============
-
-Template for a java command based robot.
+2014Robot
+=========
