@@ -1,7 +1,8 @@
 TODO:
 
 Controllers:
-	Port controller.java to GenericController system
+	Create a driver controller using GenericController.java
+
 Find purpose of Constants.java
 
-Clean:
+Rebuild Test Mode
