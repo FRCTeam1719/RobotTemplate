@@ -77,4 +77,8 @@ public class EncoderDevice implements IStep {
     public void setAveragesToSample(int samplesToAverage) {
         this.samplesToAverage = samplesToAverage;
     }
+
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }

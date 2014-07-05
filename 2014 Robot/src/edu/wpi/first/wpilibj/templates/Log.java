@@ -35,6 +35,10 @@ public class Log implements IStep{
     public void step(){
         send();
      }
+    
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }
     
 

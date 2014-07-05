@@ -30,4 +30,8 @@ public class UltrasonicSensor implements IStep{
         this.slot = slot;
         return this;
     }
+    
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }

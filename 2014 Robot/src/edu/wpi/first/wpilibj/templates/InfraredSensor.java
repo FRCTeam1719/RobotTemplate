@@ -38,6 +38,8 @@ public class InfraredSensor implements IStep{
         return infrared.getAverageValue();
     }
     
-    
+    public void test() {
+        System.out.println("No test for this device");
+    }
     
 }

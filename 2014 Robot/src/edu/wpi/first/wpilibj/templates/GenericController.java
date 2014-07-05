@@ -58,5 +58,9 @@ public class GenericController implements IStep{
     public void leftJoysticky(double value){/*please don't put anything in here*/}
     public void rightJoystickX(double value){/*please don't put anything in here*/}
     public void rightJoystickY(double value){/*please don't put anything in here*/}
+    
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }
 

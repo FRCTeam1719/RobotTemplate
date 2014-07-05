@@ -28,4 +28,8 @@ public class Autonomous implements IStep {
             doneAllActs = run.doAct();
         }
     }
+
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }

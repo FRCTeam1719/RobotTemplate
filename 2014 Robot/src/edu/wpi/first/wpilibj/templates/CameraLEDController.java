@@ -40,5 +40,9 @@ public class CameraLEDController implements IStep{
         }
         SmartDashboard.putBoolean("cameraLEDOn", cameraOn);
     }
+
+    public void test() {
+        System.out.println("No test for this device");
+    }
     
 }

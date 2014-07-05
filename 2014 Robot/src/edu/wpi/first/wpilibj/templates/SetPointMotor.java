@@ -29,7 +29,7 @@ public class SetPointMotor implements IStep {
     public boolean isGoingBack = false;
     public final double IDLE_SPEED = .1;
     
-
+    
     public void step() {
         if(!enabled){
             victor.set(IDLE_SPEED);
@@ -93,5 +93,9 @@ public class SetPointMotor implements IStep {
     }
     public void disable(){
         this.enabled=false;
+    }
+    
+    public void test() {
+        System.out.println("No test for this device");
     }
 }

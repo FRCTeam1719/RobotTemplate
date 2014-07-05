@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.tables.ITable;
 import edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+import edu.wpi.first.wpilibj.templates.testmode.TestMode;
 
 /**
  *
@@ -24,6 +25,7 @@ public class SmartDashboardReader implements IStep {
     public static SendableChooser testMode;
     private static final boolean SMARTDASHBOARD = true;
     private static final boolean LIVEWINDOW = false;
+    public boolean testsuccessfull = false;
 
     //Grab the LiveWindow networktable, used for test mode
     public static NetworkTable testTable = NetworkTable.getTable("LiveWindow");
@@ -126,6 +128,10 @@ public class SmartDashboardReader implements IStep {
             SmartDashboard.putNumber(name, 0);
         }
         return ans;
+    }
+    
+    public void test() {
+        System.out.println("No test for this device");
     }
 
 }

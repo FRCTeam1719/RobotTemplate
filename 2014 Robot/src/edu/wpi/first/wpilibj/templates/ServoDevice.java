@@ -30,4 +30,8 @@ public class ServoDevice implements IStep{
         servoValue = value;
     }
     
+    public void test() {
+        System.out.println("No test for this device");
+    }
+    
 }

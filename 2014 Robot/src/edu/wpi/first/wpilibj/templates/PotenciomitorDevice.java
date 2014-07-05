@@ -30,4 +30,8 @@ public class PotenciomitorDevice implements IStep {
     public double get(){
         return pontentiometer.get();
     }
+    
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }

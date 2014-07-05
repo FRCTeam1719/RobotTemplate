@@ -10,5 +10,6 @@ package edu.wpi.first.wpilibj.templates;
  */
 
 public interface IStep {
-    public void step();   
+    public void step();  
+    public void test();
 }

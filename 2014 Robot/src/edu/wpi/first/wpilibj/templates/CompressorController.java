@@ -72,5 +72,8 @@ public class CompressorController implements IStep{
         return this;
         
     }
-    
+
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }

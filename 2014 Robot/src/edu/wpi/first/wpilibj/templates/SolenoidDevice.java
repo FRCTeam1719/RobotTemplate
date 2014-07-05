@@ -36,4 +36,8 @@ public class SolenoidDevice implements IStep{
     public void set(boolean isOn){
         this.isOn = isOn;
     }
+    
+    public void test() {
+        System.out.println("No test for this device");
+    }
 }
