@@ -1,5 +1,8 @@
 # Created by http://www.gitignore.io
 
+#Netbeans
+nbproject/
+build/
 ### OSX ###
 .DS_Store
 .AppleDouble
